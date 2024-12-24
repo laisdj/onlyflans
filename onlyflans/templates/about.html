@@ -1,0 +1,41 @@
+{% extends "layout/base.html" %}
+
+{% block title %}
+Acerca de NosotrEs:
+{% endblock %} 
+
+{% block content %} 
+
+{% load static %}
+
+<section>
+    <div class="content" style="background-color: #ffcccb; padding: 20px; border-radius: 8px;">
+        <h1 style="margin-bottom: 20px;">Acerca de NosotrEs:</h1>
+        
+        <!-- Agregar la imagen aquí -->
+        <div style="text-align: center; margin-bottom: 15px;">
+            <img src="{% static 'img/perro.png' %}" alt="Descripción de la imagen" style="height: 500px; width: auto; border-radius: 8px;">
+        </div>
+        
+
+        <p style="font-size: 1.2rem; margin-bottom: 20px; font-weight: bold; color: rgb(0, 0, 0);">¡Bienvenidos a Onlyflans, la tienda online nacida en mucho
+            esfuerzo a través de La Liga de las Sombras el año 2025, donde la repostería se convierte en una experiencia
+            única, atrevida y deliciosa! Nos especializamos en la creación de pasteles eróticos, cuidadosamente
+            diseñados para despertar todos los sentidos y agregar un toque de diversión y picardía a tus celebraciones.
+        </p>
+
+        <p style="font-size: 1.2rem; margin-bottom: 20px; font-weight: bold; color: rgb(0, 0, 0);">Nos enorgullece ofrecerte una experiencia discreta y
+            personalizada. Garantizamos la privacidad de cada pedido y te aseguramos que recibirás un producto que
+            cumplirá con tus expectativas, tanto en sabor como en originalidad. Explora nuestro catálogo y descubre cómo
+            un pastel puede ser mucho más que un postre.</p>
+
+        <div style="text-align: center; margin-bottom: 15px;"> <!-- Contenedor para centrar el botón -->
+            <a href="/" class="btn" style="background-color: #ff69b4; color: white; border: none; margin-top: 15px;">Inicio</a> 
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

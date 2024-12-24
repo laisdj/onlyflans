@@ -1,0 +1,42 @@
+{% extends "layout/base.html" %}
+
+{% block title %}
+Bienvenido picaron dulzon
+{% endblock %} 
+
+{% block content %} 
+
+<div style="background-color: black; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 15px; padding: 20px;">
+    <h1 style="color: #ff69b4;">Bienvenido picaron {{full_name}}</h1>
+    <h3 style="color: #ff69b4;">Tu placer culpable y dulzón.</h3>
+</div>
+
+
+<div class="container mt-5">
+    <div class="row">
+        {% if flanes_privados %}
+            {% for flan in flanes_privados %}
+            <div class="col-md-3"> <!-- Cambiado a col-md-3 para 4 por fila -->
+                <div class="card mb-4">
+                    <img src="{{ flan.image_url }}" class="card-img-top" alt="{{ flan.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ flan.name }}</h5>
+                        <p class="card-text">{{ flan.description }}</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="col-12">
+                <div class="alert alert-info" role="alert">
+                    No hay flanes privados disponibles en este momento.
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+
+
+{% endblock %}

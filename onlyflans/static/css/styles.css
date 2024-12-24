@@ -1,0 +1,6 @@
+.container {
+    width: 80%; /* Ajusta según sea necesario */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+    padding: 20px;
+    box-sizing: border-box;
+}
